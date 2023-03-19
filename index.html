@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data/css/lib.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="data/css/style.css">
+    <title>void21</title>
+</head>
+<body>
+<section class="d-flex content p-1">
+    <div class="p-1 parent-side-bar">
+        <div class="side-bar round">
+            <div class="profile p-3 d-flex">
+                <div>
+                    <h2 class="logo">void21</h2>
+                </div>
+                <div id="btn-side-bar" class="round p-1">
+                    <h2 class="bi bi-list"></h2>
+                </div>
+            </div>
+            <hr class="hr">
+            <a href="/" class="select-item active-item my-2 mx-auto d-flex round-2">
+                <h3 class="bi bi-grid-1x2-fill"></h3>
+                <h3 class="side-bar-txt-item">DashBoard</h3>
+            </a>
+            <a href="/terminal.html" class="select-item my-2 mx-auto d-flex round-2">
+                <h3 class="bi bi-terminal"></h3>
+                <h3 class="side-bar-txt-item">Terminal</h3>
+            </a>
+        </div>
+    </div>
+    <div class="content-page py-1 px-2">
+        <header class="mb-2 header d-flex round px-3">
+            <div style="font-size: 18px" class="d-none d-md-block">
+                <b>Welcome,Fibo</b>
+            </div>
+            <div class="d-flex search-box">
+                <form method="post" id="search">
+                    <div class="cont-input">
+                        <i class="bi bi-search"></i>
+                        <input name="search" class="mr-2 search" placeholder="Search...">
+                        <input type="submit" class="submit-search round" value="Enter">
+                    </div>
+                </form>
+                <div class="d-flex cont-icon">
+                    <h3 class="bi bi-bell"></h3>
+                    <h3 class="bi bi-power power"></h3>
+                </div>
+            </div>
+        </header>
+        <div class="mb-3"></div>
+        <div class="col-container" style="row-gap: 0">
+            <div class="mb-3 card round col-12 col-xl-3 col-md-6 p-3">
+                <div class="space-between">
+                    <h2>Users</h2>
+                    <h2 class="bi bi-people-fill"></h2>
+                </div>
+                <div>
+                    <div class="my-2 mx-1 numb-card">+655</div>
+                </div>
+                <p class="txt-mini-card text-muted">Lorem ipsum.</p>
+            </div>
+            <div class="mb-3 card round col-12 col-xl-3 col-md-6 p-3">
+                <div class="space-between">
+                    <h2>Views</h2>
+                    <h2 class="bi bi-eye-fill"></h2>
+                </div>
+                <div>
+                    <div class="my-2 mx-1 numb-card">78,201</div>
+                </div>
+                <p class="txt-mini-card text-muted">Lorem ipsum.</p>
+            </div>
+            <div class="mb-3 card round col-12 col-xl-3 col-md-6 p-3">
+                <div class="space-between">
+                    <h2>Activity</h2>
+                    <h2 class="bi bi-activity"></h2>
+                </div>
+                <div>
+                    <div class="my-2 mx-1 numb-card">84</div>
+                </div>
+                <p class="txt-mini-card text-muted">Lorem ipsum.</p>
+            </div>
+            <div class="mb-3 card round col-12 col-xl-3 col-md-6 p-3">
+                <div class="space-between">
+                    <h2>Productivity</h2>
+                    <h2 class="bi bi-bag-fill"></h2>
+                </div>
+                <div>
+                    <div class="my-2 mx-1 numb-card">139</div>
+                </div>
+                <p class="txt-mini-card text-muted">Lorem ipsum.</p>
+            </div>
+            <div class="col-md-8 p-2 mb-2 card round col-12">
+                <h3 class="mx-2 my-1">Chart 1</h3>
+                <div class="ea758d">
+                    <canvas id="chart" width="400" height="205"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2 card round col-12">
+                <h3 class="mx-2 my-2">Chart 2</h3>
+                <div class="ea758d center">
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="data/js/jsHub.min.js"></script>
+<script src="data/js/chart.min.js"></script>
+<script src="data/js/app.js"></script>
+</html>
